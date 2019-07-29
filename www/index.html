@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+  <script src="lib/onsenui/js/onsenui.min.js"></script>
+
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsenui.css">
+  <link rel="stylesheet" href="lib/onsenui/css/onsen-css-components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- CDN DO BOOTSTRAP CSS - 4 -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <!-- CDN DO BOOTSTRAP JS/POPPER - 4 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  <style>
+    h3{
+      margin-top: 50px;
+      font-weight: bolder;
+    }
+    div.otherOptions button{
+      background: linear-gradient(to right, #e66465, #9198e5);
+      color: white;
+      font-weight: bolder;
+    }
+    div.otherOptions button:hover{
+      background: grey;
+      transition: 0.4s all ease-in;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h3 style="text-align:center;">CADASTRE SEU LIVROS</h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="infomations">
+          <!-- FORMULARIO DE DADOS PARA CADASTRO -->
+          <div class="form-group">
+            <label for="title">Titulo do Livro</label>
+            <input class="form-control" type="text" id="title">
+          </div>
+          <div class="form-group">
+            <label for="author">Nome do Autor</label>
+            <input class="form-control" type="text" id="author">
+          </div>
+          <div class="form-group">
+            <label for="register">ISBN</label>
+            <input class="form-control" type="text" id="register">
+          </div>
+          <div class="form-group">
+            <label for="year">Ano de Lançamento</label>
+            <input class="form-control" type="date" id="year">
+          </div>
+          <!-- FIM DO FORMULÁRIO -->
+        </div>
+      </div>
+    </div>
+    <!-- SALVAR -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="form-group">
+          <button class="btn btn-block btn-success">SALVAR</button>        
+        </div>
+      </div>
+    </div>
+    <!-- OUTRAS OPÇÕES -->
+    <div class="otherOptions">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <button class="btn btn-block">CANCELAR</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <button class="btn btn-block">LISTAR</button>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-group">
+            <button class="btn btn-block">NOVO</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
